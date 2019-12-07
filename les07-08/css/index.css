@@ -1,0 +1,126 @@
+/**
+* Index stylesheet for Mutw
+*
+* @auther Jedidia Kasongo
+*
+*/
+
+/* ==========================================================
+*LAYOUT
+============================================================= */
+
+main .wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+main .column {
+	width: 30%;
+}
+
+main .column + .column {
+	margin-left: 5%
+}
+
+/* ===========================================================
+* BANNER
+============================================================== */
+
+/* banner */
+
+#banner {
+	background-color: #62717d;
+}
+
+/* background */
+
+#banner .wrapper {
+	background: url(../images/mutwhero.png) no-repeat center 2.5rem;
+	background-size: 39.2rem 16.2rem;
+	padding-top: 18rem;
+	padding-bottom: 3rem;
+}
+
+/* catchphrase */
+
+#baner h2 {
+	color: #fff;
+	font-size: 2.4rem;
+	font-weight: 200;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* =============================================================
+* MAIN
+================================================================ */
+
+/* wrapper */
+
+main .wrapper {
+	padding: 5rem 0;
+}
+
+/* columns */
+
+main .column h3 {
+	border-bottom: 1px solid #f2771d;
+	color: #3d5aac;
+	font-size: 3.2rem;
+	font-weight: 200;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+/* images */
+
+.column img {
+	max-width: 100%;
+	margin-bottom: 0.5rem;
+}
+
+.link_more img {
+	border: 1px solid #f2771d;
+	border-radius: 5px;
+	display: block;
+	float: right;
+	margin-top: 2rem;
+	padding: 0.5rem 1rem;
+	text-transform: uppercase;
+	transition: all 0.2s;
+}
+
+.link_more::after {
+	content: ">";
+	font-size: 2rem;
+	margin-left: 1rem;
+}
+
+.link_more:hover {
+	background-color: #f2771d;
+	color: white;
+}
+
+/* last column */
+
+main .column:last-child {
+	text-align: center;
+}
+
+main .column:last-child a:hover {
+	text-decoration: underline;
+}
+
+#socialmedia {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	list-style: none;
+	margin-bottom: 2rem;
+}
+
+#socialmedia a {
+	background-size: 100%;
+	display: block;
+}
